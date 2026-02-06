@@ -23,6 +23,10 @@ bool Window::should_close() const { return (glfwWindowShouldClose(glfw_window_) 
 
 GLFWwindow* Window::handle() const { return glfw_window_; }
 
+int Window::width() const { return width_; }
+
+int Window::height() const { return height_; }
+
 void Window::setGLFWWindowHints() const {
   glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
   glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);

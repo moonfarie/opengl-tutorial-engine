@@ -17,6 +17,9 @@ class Window {
   bool should_close() const;
   GLFWwindow* handle() const;
 
+  int width() const;
+  int height() const;
+
  private:
   void setGLFWWindowHints() const;
   void createGLFWWindow();

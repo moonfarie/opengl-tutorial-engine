@@ -1,5 +1,6 @@
 #pragma once
 
+#include "display.hpp"
 #include "glad.hpp"
 #include "glfw.hpp"
 #include "window.hpp"
@@ -15,4 +16,5 @@ class App {
   platform::GLFW glfw_;
   platform::Window window_;
   platform::GLAD glad_;
+  platform::Display display_;
 };
