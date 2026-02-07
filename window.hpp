@@ -1,8 +1,8 @@
 #pragma once
 
-#include <GLFW/glfw3.h>
-
 #include <string>
+
+struct GLFWwindow;
 
 namespace platform {
 
@@ -14,8 +14,8 @@ class Window {
   Window(const Window&) = delete;
   Window& operator=(const Window&) = delete;
 
-  bool should_close() const;
   GLFWwindow* handle() const;
+  bool should_close() const;
 
   int width() const;
   int height() const;

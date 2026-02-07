@@ -1,5 +1,7 @@
 #include "glfw.hpp"
 
+#include <GLFW/glfw3.h>
+
 #include <stdexcept>
 
 namespace platform {

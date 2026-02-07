@@ -1,5 +1,7 @@
 #include "window.hpp"
 
+#include <GLFW/glfw3.h>
+
 #include <stdexcept>
 
 namespace platform {
@@ -19,9 +21,9 @@ Window::~Window() {
   }
 }
 
-bool Window::should_close() const { return (glfwWindowShouldClose(glfw_window_) != 0); }
-
 GLFWwindow* Window::handle() const { return glfw_window_; }
+
+bool Window::should_close() const { return (glfwWindowShouldClose(glfw_window_) != 0); }
 
 int Window::width() const { return width_; }
 
