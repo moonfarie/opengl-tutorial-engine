@@ -9,8 +9,8 @@ class GLFW {
   GLFW();
   ~GLFW();
 
-  void poll_events() const;
   void swap_buffers(GLFWwindow* window) const;
+  void poll_events() const;
 };
 
 }  // namespace platform

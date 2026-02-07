@@ -3,6 +3,7 @@
 #include "display.hpp"
 #include "glad.hpp"
 #include "glfw.hpp"
+#include "renderer.hpp"
 #include "window.hpp"
 
 class App {
@@ -17,4 +18,5 @@ class App {
   platform::Window window_;
   platform::GLAD glad_;
   platform::Display display_;
+  render::Renderer renderer_;
 };

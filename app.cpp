@@ -7,8 +7,9 @@ App::App()
 
 void App::run() const {
   while (not window_.should_close()) {
-    glfw_.poll_events();
+    renderer_.draw_frame();
 
     glfw_.swap_buffers(window_.handle());
+    glfw_.poll_events();
   }
 }

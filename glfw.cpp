@@ -12,8 +12,8 @@ GLFW::GLFW() {
 
 GLFW::~GLFW() { glfwTerminate(); }
 
-void GLFW::poll_events() const { glfwPollEvents(); }
-
 void GLFW::swap_buffers(GLFWwindow* window) const { glfwSwapBuffers(window); }
+
+void GLFW::poll_events() const { glfwPollEvents(); }
 
 }  // namespace platform
