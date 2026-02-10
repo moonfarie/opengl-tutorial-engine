@@ -1,4 +1,4 @@
-CFLAGS = -std=c++23 -Wall -Wextra -Wpedantic
+CFLAGS = -std=c++23 -Wall -Wextra -Wpedantic -Wconversion -Wsign-conversion -Wdouble-promotion -Wnull-dereference
 LDFLAGS = -lglfw -lGL
 
 engine: *.cpp *.hpp
