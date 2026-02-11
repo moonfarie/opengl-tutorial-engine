@@ -4,6 +4,7 @@
 #include "glad.hpp"
 #include "glfw.hpp"
 #include "renderer.hpp"
+#include "shader_program.hpp"
 #include "window.hpp"
 
 class App {
@@ -19,4 +20,5 @@ class App {
   platform::GLAD glad_;
   platform::Display display_;
   render::Renderer renderer_;
+  render::ShaderProgram shader_program_;
 };
